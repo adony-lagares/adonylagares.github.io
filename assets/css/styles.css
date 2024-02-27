@@ -6,7 +6,8 @@
 
     --primary-bg-color: #111217;
     --secondary-bg-color: #28292E;
-    --border-color: #28292E;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
 
     --title-color: #F0F0F0;
     --text-color: #9A9A9C;
@@ -20,7 +21,8 @@
 
     --primary-bg-color: #E9E9E9;
     --secondary-bg-color: #C7C8C9;
-    --border-color: #C7C8C9;
+    --primary-border-color: #C7C8C9;
+    --secondary-border-color: #56575A;
 
     --title-color: #0B0B0F;
     --text-color: #28292E;
@@ -70,6 +72,7 @@ h1 {
 p {
     font-size: 1.25rem;
     text-align: justify;
+    color: var(--primary-color);
 }
 h1,h2,h3 {
     font-family: 'League Spartan', Courier, monospace;
@@ -124,8 +127,15 @@ h1,h2,h3 {
     gap: 0.625rem;
     background: transparent;
     border-radius: 3.125rem;
-    padding: 0.875rem 1rem;
+    padding: 0.875rem 1.5rem;
     width: 100%;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn span, .btn i {
@@ -150,7 +160,7 @@ width: 100vw;
 position: fixed;
 bottom: 0;
 justify-content: space-between;
-border-top: 1px solid var(--border-color);
+border-top: 1px solid var(--primary-border-color);
 
 }
 
@@ -210,13 +220,42 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 6.25rem 1rem 2rem 1rem;
+    gap: 1.25rem;
+    padding: 2rem 1rem 2rem 1rem;
     background: var(--secondary-bg-color);
-    margin-top: -5.5rem;
+    margin-top: -2rem;
 }
 
 .section__skills h2 {
     text-transform: none;
+    font-size: 2rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 50rem;
+}
+
+.skills__logo {
+    height: 2.4rem;
+}
+
+footer {
+    margin-bottom: 5rem;
 }
 
 .footer__text {
@@ -226,7 +265,7 @@ main {
 footer p {
     font-size: .875rem;
     text-align: center;
-    margin-bottom: 5rem;
+    padding: 1rem;
 }
 
 
@@ -251,13 +290,93 @@ footer p {
     .header__toggle{
         min-width: 30%;
     }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    main {
+        padding: 8rem 6rem 4rem 6rem;
+
+    }
+
+    .main__content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .section__skills {
+        padding: 3rem 6rem 2rem 6rem;
+        margin-top: -3rem;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px)   { 
+    main {
+        padding: 12rem 6rem 2rem 6rem;
+    }
+
+ .main__content1 .btn {
+    width: auto;
+ }
+
+ .section__skills {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 4rem;
+    margin-top: 0;
+    padding: 5rem 6rem 4rem;
+ }
+
+ .section__skills h2 {
+    font-size: 3.5rem;
+    width: 60%;
+ }
+
+ .skills__list {
+    gap: 1rem;
+ }
+
+ .skills__item {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 50rem;
+}
+
+.skills__logo {
+    height: 3rem;
+}
+
 }
 
 
 @media (min-width: 1400px) {
-    .header {
-        padding: 1rem 10rem;
+
+    h1 {
+        font-size: 6.25rem;
     }
 
+    p {
+        font-size: 1.5rem;
+    }
+    .header {
+        padding: 1rem 15rem;
+    }
+
+    main {
+        padding: 12rem 15rem 2rem;
+    }
+
+    .section__skills {
+        padding: 5rem 15rem 4rem;
+     }
 }
 
