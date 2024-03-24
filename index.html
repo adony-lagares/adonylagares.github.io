@@ -1,125 +1,580 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ádony Lagares | Portfólio</title>
-    <meta name="description" content="Portfólio do desenvolvedor fullstack Ádony Lagares para compartilhar projetos e habilidades desenvolvidas.">
+    <meta
+      name="description"
+      content="Portfólio do desenvolvedor fullstack Ádony Lagares para compartilhar projetos e habilidades desenvolvidas."
+    />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-            <nav class="header__nav">
+      <nav class="header__nav">
         <ul class="menu menu--principal">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
         </ul>
-    </nav>
-        <div class="header__brand">
-            <img class="brand__logo" src="/assets/images/logo.png" alt="logo AL" srcset="">
-        </div>
-        <div class="header__toggle">
-        <i  id="toggleTheme" class="bi bi-sun"></i>
-        </div>
+      </nav>
+      <div class="header__brand">
+        <img
+          class="brand__logo"
+          src="/assets/images/logo.png"
+          alt="logo AL"
+          srcset=""
+        />
+      </div>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
+      </div>
     </header>
     <nav class="nav--mobile">
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i>
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
-        </ul>
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <i class="menu__icon bi bi-house-door"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projects">
+            <i class="menu__icon bi bi-window-stack"></i>
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <i class="menu__icon bi bi-person"></i>
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <i class="menu__icon bi bi-envelope"></i>
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <div class="main__content1">
-            <h1>
-                <b>Soluções Criativas &</b> Desenvolvimento FullStack
-            </h1>
-            <p>Ádony Lagares, Ouro Branco-MG, Desenvolvedor Fullstack Jr.</p>
-            <ul class="menu menu--social">
-                <li>
-                    <a class="menu__link" href="http://www.github.com/adony-lagares">
-                        <i class="menu__icon bi bi-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="menu__link" href="http://www.linkedin.com/in/adony-lagares">
-                        <i class="menu__icon bi bi-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i  id="toggleTheme" class="bi bi-arrow-down-right"></i>
-            </button>
-        </div>
+      <div class="main__content1">
+        <h1><b>Soluções Criativas &</b> Desenvolvimento FullStack</h1>
+        <p>Ádony Lagares, Ouro Branco-MG, Desenvolvedor Fullstack Jr.</p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="http://www.github.com/adony-lagares">
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu__link"
+              href="http://www.linkedin.com/in/adony-lagares"
+            >
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#projects">
+          <button class="btn btn--primary">
+            <span>Ver Projetos</span>
+            <i id="toggleTheme" class="bi bi-arrow-down-right"></i>
+          </button>
+        </a>
+      </div>
     </main>
     <section class="section__skills">
-        <h2>Conhecimento nas principais tecnologias do mercado.</h2>
-        <ul class="skills__list">
-            <li class="skills__item">
-                <img class="skills__logo" src="/assets/images/technologies/javascript.svg" alt="Logo Javascript" srcset="">
-            </li>
-            <li class="skills__item">
-                <img class="skills__logo" src="/assets/images/technologies/bootstrap.svg" alt="Logo Javascript" srcset="">
-            </li>
-            <li class="skills__item">
-                <img class="skills__logo" src="/assets/images/technologies/react.svg" alt="Logo React" srcset="">
-            </li>
-            <li class="skills__item">
-                <img class="skills__logo" src="/assets/images/technologies/microsoftazure.svg" alt="Logo Azure" srcset="">
-            </li>
-            <li class="skills__item">
-                <img class="skills__logo" src="/assets/images/technologies/dotnet.svg" alt="Logo Dotnet" srcset="">
-            </li>
-        </ul>
+      <h2>Conhecimento nas principais tecnologias do mercado.</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="/assets/images/technologies/javascript.svg"
+            alt="Logo Javascript"
+            srcset=""
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="/assets/images/technologies/bootstrap.svg"
+            alt="Logo Javascript"
+            srcset=""
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="/assets/images/technologies/react.svg"
+            alt="Logo React"
+            srcset=""
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="/assets/images/technologies/microsoftazure.svg"
+            alt="Logo Azure"
+            srcset=""
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="/assets/images/technologies/dotnet.svg"
+            alt="Logo Dotnet"
+            srcset=""
+          />
+        </li>
+      </ul>
     </section>
+    <section id="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/project_example.jpg"
+            alt="Screen Projeto"
+            srcset=""
+          />
+          <div class="card__body">
+            <h3 class="card__title">Nome do Projeto</h3>
+            <p class="card__description">Descrição do Projeto</p>
+            <ul class="card__list">
+              <li>• Funcionalidade 1;</li>
+              <li>• Funcionalidade 2;</li>
+              <li>• Funcionalidade 3;</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/javascript.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/bootstrap.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/react.svg"
+                  alt="Logo React"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/dotnet.svg"
+                  alt="Logo Dotnet"
+                  srcset=""
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i id="toggleTheme" class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img
+            class="card__cover"
+            src="assets/images/project_example.jpg"
+            alt="Screen Projeto"
+            srcset=""
+          />
+          <div class="card__body">
+            <h3 class="card__title">Nome do Projeto</h3>
+            <p class="card__description">Descrição do Projeto</p>
+            <ul class="card__list">
+              <li>• Funcionalidade 1;</li>
+              <li>• Funcionalidade 2;</li>
+              <li>• Funcionalidade 3;</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/javascript.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/bootstrap.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/react.svg"
+                  alt="Logo React"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/dotnet.svg"
+                  alt="Logo Dotnet"
+                  srcset=""
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i id="toggleTheme" class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/project_example.jpg"
+            alt="Screen Projeto"
+            srcset=""
+          />
+          <div class="card__body">
+            <h3 class="card__title">Nome do Projeto</h3>
+            <p class="card__description">Descrição do Projeto</p>
+            <ul class="card__list">
+              <li>• Funcionalidade 1;</li>
+              <li>• Funcionalidade 2;</li>
+              <li>• Funcionalidade 3;</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/javascript.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/bootstrap.svg"
+                  alt="Logo Javascript"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/react.svg"
+                  alt="Logo React"
+                  srcset=""
+                />
+              </li>
+              <li class="skills__item">
+                <img
+                  class="skills__logo"
+                  src="/assets/images/technologies/dotnet.svg"
+                  alt="Logo Dotnet"
+                  srcset=""
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i id="toggleTheme" class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/adony-lagares">
+          <button class="btn btn--projects">
+            <span>Ver Todos Projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img src="/assets/images/a.jpg" alt="" class="about__photo" />
+        <div class="about__description">
+          <h2 class="about__title">Sobre mim</h2>
+          <p>
+            Ádony Lagares. Desenvolvedor apaixonado pela tecnologia e suas
+            possibilidades, meu primeiro contato com programação foi
+            desenvolvendo sistemas industriais de rastreamento. Atualmente curso
+            graduação em Engenharia de Softaware e tenho dois anos de
+            experiência profissional como desenvolvedor.
+          </p>
+          <h4 class="title__interest">Áreas de interesse:</h4>
+          <ul class="about__list">
+            <li class="about__interest">
+              <i class="bi bi-bookmarks-fill"></i>
+              Cibersegurança
+            </li>
+            <li class="about__interest">
+              <i class="bi bi-bookmarks-fill"></i>
+              Machine Learning | AI
+            </li>
+            <li class="about__interest" >
+              <i class="bi bi-bookmarks-fill"></i>
+              Desenvolvimento de Software
+            </li>
+            <li class="about__interest">
+              <i class="bi bi-bookmarks-fill"></i>
+              QA
+            </li>
+          </ul>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span> Inglês: Avançado | Espanhol: Básico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="http://www.linkedin.com/in/adony-lagares" target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="">
+              <button class="btn btn--primary">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3 class="row__title">Formação</h3>
+            <div class="about__text">
+              <h4>Engenharia de Software</h4>
+              <span> Jul 2021 - Atualmente</span>
+            </div>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Universidade UniCesumar</span>
+              <div class="about__icons">
+                <i class="bi bi-mortarboard"></i>
+                <span>Graduação - Bacharel</span>
+              </div>
+            </div>
+            <div class="row2">
+              <h2 class="row2__title">Experiências</h2>
+              <br />
+              <div class="about__text">
+              <h4>Estagiário Engenharia de Software</h4>
+              <br />
+              <span>Vallourec Soluções Tubulares. Mar 2022 - Mar 2024</span>
+              <br />
+              <br />
+              <span
+                >Desenvolvedor de sistemas de rastreamento, sistemas de consulta
+                de produção do usuário. Analista de sistemas legados e
+                comunicação com cliente final.</span
+              >
+              <ul class="about__list">
+                <li class="about__item">
+                  Sistemas Industriais MES, SAP, LIMS;
+                </li>
+                <li class="about__item">
+                  Desenvolvimento de sistemas de rastreamento;
+                </li>
+                <li class="about__item">Melhorias em sistemas legados;</li>
+                <li class="about__item">Análise e suporte ao cliente;</li>
+                <li class="about__item">Instrutor de jovens aprendizes;</li>
+                <li class="about__item">
+                  Suporte aos times internacionais para integração de sistemas.
+                </li>
+              </ul>
+            </div>
+            <div class="about__text">
+              <h4>Analista de Planejamento Industrial</h4>
+              <br />
+              <span>Alfa Engenharia e Montagens Ltda. Jan 2020 - Jan 2022</span>
+              <br />
+              <br />
+              <span>Coletar dados de producão em área industrial, fazer relatórios
+                e dashboards dos resultados para informação à Contratante e
+                suporte nas áreas de inteligência no geral.</span>
+              <ul class="about__list">
+                <li class="about__item">Relatório diário de obra;</li>
+                <li class="about__item">Relatório financeiro;</li>
+                <li class="about__item">
+                  Acompanhamento e apontamento de efetivo;
+                </li>
+                <li class="about__item">
+                  Planejamento de ações estratégicas visando produção.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <h3 class="row__title">Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Formação .NET Developer</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>Digital Innovation One. Dez 2023. 96h.</p>
+            <ul class="accordion__list">
+              <li class="about__item">Desenvolvimento C#;</li>
+              <li class="about__item">ASP.NET Core, ASP.NET Framework, ASP.NET MVC;</li>
+              <li class="about__item">Microsoft Azure;</li>
+              <li class="about__item">Entity Framework;</li>
+              <li class="about__item">DB Relacional SQL Server;</li>
+              <li class="about__item">DB Não Relacional MongoDB;</li>
+              <li class="about__item">Virtualização Docker.</li>
+            </ul>
+          </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Santander Bootcamp Cibersegurança</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>Digital Innovation One. Dez 2023. 53h.</p>
+              <ul class="accordion__list">
+                <li class="about__item">Práticas seguras nos códigos;</li>
+                <li class="about__item">Segurança de Endpoints;</li>
+                <li class="about__item">Pentest de Sistemas operacionais;</li>
+                <li class="about__item">Protocolos de Rede;</li>
+                <li class="about__item">Conceitos de Cibersegurança;</li>
+                <li class="about__item">Cibersegurança com IA;</li>
+                <li class="about__item">Osint Framework;</li>
+                <li class="about__item">Metasploit.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Desenvolvimento .NET & QA WEX Bootcamp</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>Digital Innovation One. Dez 2023. 101h.</p>
+              <ul class="accordion__list">
+                <li class="about__item">ASP.NET Core, ASP.NET Framework, ASP.NET MVC</li>
+                <li class="about__item">Entity Framework;</li>
+                <li class="about__item">DB Relacional MySQL;</li>
+                <li class="about__item">Conceitos QA;</li>
+                <li class="about__item">Automação de Testes;</li>
+                <li class="about__item">Testes unitários;</li>
+                <li class="about__item">Qualidade de Software.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Hackers do Bem</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>Escola Superior de Redes da RNP. Jan 2024 - Atualmente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>
+        Estou disponível para serviços e novas conexões. Contate-me via e-mail e
+        conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a
+            class="menu__link"
+            href="https://github.com/adony-lagares"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link"
+            href="https://www.linkedin.com/in/adonylagares/"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:adonyhibari48@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">adonyhibari48@gmail.com</span>
+        </button>
+      </a>
+    </section>
+
     <footer class="footer__text">
-        <p>
-            2024 ©.Todos os Direitos Reservados. Ádony Lagares. Desenvolvido por <a href="http://github.com/adony-lagares">AL</a>. 
-        </p>
+      <p>
+        2024 ©.Todos os Direitos Reservados. Ádony Lagares. Desenvolvido por
+        <a href="http://github.com/adony-lagares">AL</a>.
+      </p>
     </footer>
     <script src="/assets/js/scripts.js"></script>
-</body>
+  </body>
 </html>
