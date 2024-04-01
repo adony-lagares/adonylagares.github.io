@@ -405,7 +405,7 @@ main {
   border: 1px solid var(--primary-border-color);
 }
 
-.about__description {
+.about__ {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -615,12 +615,13 @@ footer p {
     gap: 4rem;
   }
 
-  .about__description h2 {
+  .about__ h2 {
     text-align: left;
   }
 
   .description__buttons {
     justify-content: flex-start;
+    margin-right: 1.75rem;
   }
 }
 
