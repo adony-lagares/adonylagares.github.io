@@ -243,7 +243,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects, .about, .contact {
+main, .projects, ., .contact {
   padding: 2.5rem 1rem;
 }
 
@@ -342,11 +342,11 @@ main {
   color: var(--title-color);
 }
 
-.card__list, .about__list {
+.card__list, .__list {
   margin-left: 1.25rem
 }
 
-.card__item, .about__item {
+.card__item, .__item {
   list-style: disc;
 }
 
@@ -382,7 +382,7 @@ main {
   margin: auto;
 }
 
-.about__content1, .about__content2 {
+.__content1, .__content2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -390,7 +390,7 @@ main {
   gap: 2rem;
 }
 
-.about__photo {
+.__photo {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -399,39 +399,39 @@ main {
   border: 1px solid var(--primary-border-color);
 }
 
-.about__ {
+.__ {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
 }
 
-.about__icons {
+.__icons {
   display: flex;
   align-items: center;
   gap: .85rem;
 }
 
-.about__icons i {
+.__icons i {
   font-size: 1.25rem;
 }
 
-.about__content2 .col1, 
-.about__content2 .col2 {
+.__content2 .col1, 
+.__content2 .col2 {
   display: flex;
   flex-direction: column;
   text-align: justify;
   gap: 2rem;
 }
 
-.about__content2 .col1 .row1,
-.about__content2 .col1 .row2 {
+.__content2 .col1 .row1,
+.__content2 .col1 .row2 {
   display: flex;
   flex-direction: column;
   gap: .5rem; 
 }
 
-.about__text {
+.__text {
     margin: .75rem;
 }
 
@@ -611,6 +611,10 @@ footer p {
 
   .about__ h2 {
     text-align: left;
+  }
+
+  .about__description {
+    gap: 1rem;
   }
 
   .description__buttons {
