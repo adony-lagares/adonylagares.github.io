@@ -350,6 +350,10 @@ main {
   list-style: disc;
 }
 
+.about__item {
+  margin-left: .75rem;
+}
+
 .card__buttons, .description__buttons {
   display: flex;
   flex-flow: row wrap;
@@ -391,12 +395,21 @@ main {
 }
 
 .about__photo {
-  width: 100%;
+  width: 89%;
   object-fit: cover;
   object-position: center;
   pointer-events: none;
-  border-radius: 50rem;
+  border-radius: 50%;
   border: 1px solid var(--primary-border-color);
+}
+
+.about__resume {
+  margin: 1rem auto 1rem auto;
+}
+
+.phrase {
+  font-size: medium;
+  margin: 1rem auto 1rem auto;;
 }
 
 .about__ {
@@ -410,10 +423,19 @@ main {
   display: flex;
   align-items: center;
   gap: .85rem;
+  margin: 1rem auto 1rem auto;
 }
 
 .about__icons i {
   font-size: 1.25rem;
+}
+
+.about__list {
+  margin: 1rem auto 2rem auto;
+}
+
+.description__buttons {
+  gap: 1rem;
 }
 
 .about__content2 .col1, 
@@ -601,6 +623,10 @@ footer p {
     gap: 5rem;
   }
 
+  .about__content1{
+    margin-bottom: 6rem;
+  }
+
   .about__content1, .about__content2 {
     display: grid;
     grid-template-columns: 34% 60%;
@@ -611,10 +637,6 @@ footer p {
 
   .about__ h2 {
     text-align: left;
-  }
-
-  .about__description {
-    gap: 1rem;
   }
 
   .description__buttons {
