@@ -243,7 +243,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects, ., .contact {
+main, .projects, .about, .contact {
   padding: 2.5rem 1rem;
 }
 
@@ -342,11 +342,11 @@ main {
   color: var(--title-color);
 }
 
-.card__list, .__list {
+.card__list, .about__list {
   margin-left: 1.25rem
 }
 
-.card__item, .__item {
+.card__item, .about__item {
   list-style: disc;
 }
 
@@ -382,7 +382,7 @@ main {
   margin: auto;
 }
 
-.__content1, .__content2 {
+.about__content1, .__content2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -390,7 +390,7 @@ main {
   gap: 2rem;
 }
 
-.__photo {
+.about__photo {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -399,39 +399,39 @@ main {
   border: 1px solid var(--primary-border-color);
 }
 
-.__ {
+.about__ {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
 }
 
-.__icons {
+.about__icons {
   display: flex;
   align-items: center;
   gap: .85rem;
 }
 
-.__icons i {
+.about__icons i {
   font-size: 1.25rem;
 }
 
-.__content2 .col1, 
-.__content2 .col2 {
+.about__content2 .col1, 
+.about__content2 .col2 {
   display: flex;
   flex-direction: column;
   text-align: justify;
   gap: 2rem;
 }
 
-.__content2 .col1 .row1,
-.__content2 .col1 .row2 {
+.about__content2 .col1 .row1,
+.about__content2 .col1 .row2 {
   display: flex;
   flex-direction: column;
   gap: .5rem; 
 }
 
-.__text {
+.about__text {
     margin: .75rem;
 }
 
