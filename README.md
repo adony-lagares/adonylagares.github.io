@@ -1,6 +1,6 @@
 # Personal Project Repository
 
-<p align="center"><img src="http://img.shields.io/static/v1?label=PROJECT%20STATUS&message=IN PROGRESS&color=GREEN&style=for-the-badge"/></p>
+<p align="center"><img src="http://img.shields.io/static/v1?label=PROJECT%20STATUS&message=IN%20PROGRESS&color=GREEN&style=for-the-badge"/></p>
 <br>
 <br>
 
